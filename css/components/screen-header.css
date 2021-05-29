@@ -14,3 +14,15 @@
 .screen-header__icons span {
   margin-left: 25px;
 }
+.screen-header__icons:last-child {
+  position: relative;
+}
+.screen-header__cog__notification {
+  width: 10px;
+  height: 10px;
+  background-color: tomato;
+  border-radius: 5px;
+  position: absolute;
+  right: -10px;
+  top: -10px;
+}
