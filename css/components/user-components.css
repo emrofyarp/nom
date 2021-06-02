@@ -3,6 +3,7 @@
 }
 .user-component {
   justify-content: space-between;
+  margin-bottom: 10px;
 }
 
 .user-component,
@@ -47,4 +48,14 @@
 .user-component__time {
   margin-bottom: 10px;
   display: block;
+}
+.user-component__subtitle i {
+  color: tomato;
+  width: 24px;
+  height: 24px;
+  border: 2px solid tomato;
+  text-align: center;
+  border-radius: 50%;
+  margin-left: 10px;
+  line-height: 24px;
 }
