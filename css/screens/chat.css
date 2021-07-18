@@ -29,7 +29,7 @@
   }
 }
 .main-chat {
-  margin-top: 120px;
+  margin-top: 150px;
   display: flex;
   /* flex로 정렬했더니 span처럼 실제요소만큼만 너비를 차지하게됨 */
   flex-direction: column;
@@ -103,7 +103,7 @@ flex child에서만 적용됨. 자식요소에 적어줘야함 위에2개를 하
   padding: 5px 25px;
   box-sizing: border-box;
   align-items: center;
-  transition: all 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 .reply .reply__column:first-child {
   width: 10%;
@@ -163,7 +163,13 @@ flex child에서만 적용됨. 자식요소에 적어줘야함 위에2개를 하
 .reply:focus-within input {
   width: 90vw;
   transform: translateX(-13%) translateY(-80px);
+  /* .reply input에 transition에 시간을 넣어야 변화를 서서히 볼수 있음 */
 }
+/*.reply input:focus {
+  width: 90vw;
+  transform: translateX(-13%) translateY(-80px);
+  위에꺼랑 똑같음
+}*/
 
 .reply:focus-within {
   transform: translateY(80px);
